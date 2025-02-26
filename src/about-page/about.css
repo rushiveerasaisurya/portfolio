@@ -309,6 +309,7 @@
   .about-title {
     font-size: 2rem;
     margin-bottom: 20px;
+    margin-left: 0px;
   }
   .about-description{
     font-size: 0.7rem;
