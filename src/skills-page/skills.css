@@ -1,0 +1,252 @@
+.skills-section {
+    min-height: 100dvh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    overflow-y: auto;
+  }
+  
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .section-header {
+    flex-shrink: 0;
+    text-align: center;
+    margin-bottom: 1rem;
+    z-index: 10;
+  }
+  
+  .section-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: aqua;
+    position: relative;
+  }
+  .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: 4px;
+    background: linear-gradient(90deg, #4299e1, #9f7aea);
+    border-radius: 2px;
+  }  
+  .section-description {
+    font-size: 1.125rem;
+    color:#a0aec0;
+    max-width: 42rem;
+    margin: 30px auto 0px auto;
+  }
+  
+  .skills-grid {
+    flex: 1;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    flex: 1;
+    align-content: start;
+    padding: 2rem;
+    scroll-snap-type: y mandatory;
+  }
+  .skills-grid::-webkit-scrollbar {
+    display: none;
+}
+ 
+  .skill-card {
+    scroll-snap-align: center;
+    background: white;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .tools{
+    grid-column: 1/-1; 
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 1.5rem 0; 
+    color: aqua; 
+  }
+  .skill-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 0px 50px aqua;
+  }
+  
+  .skill-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .skill-icon {
+    width: 2rem;
+    height: 2rem;
+    color: #2563eb;
+    margin-right: 0.75rem;
+    flex-shrink: 0;
+  }
+  
+  .skill-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #000000;
+  }
+  
+  .skill-description {
+    font-size: 0.875rem;
+    color: #4b5563;
+    line-height: 1.5;
+    flex: 1;
+    margin-right: 4rem;
+  }
+  
+ 
+  .circular-progress {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    overflow: visible;
+  }
+  
+  .progress-ring {
+    transform: rotate(-90deg);
+    width: 100%;
+    height: 100%;
+    
+  }
+  
+  .progress-ring-circle {
+    fill: none;
+    stroke: #e5e7eb;
+    stroke-width: 8;
+  }
+  
+  .progress-ring-circle-fill {
+    fill: none;
+    stroke: #2563eb;
+    stroke-width: 8;
+    stroke-linecap: round;
+    transition: stroke-dasharray 1s ease-out;
+  }
+  
+  .progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #2563eb;
+  }
+
+  @media (max-width: 1280px) {
+    .skills-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .section-title::after {
+      width: 300px;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .skills-grid {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 1.5rem;
+    }
+    
+    .section-title {
+      font-size: 2.5rem;
+    }
+    
+    .section-title::after {
+      width: 250px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .skills-section {
+      margin-left: 70px;
+      overflow-y: auto;
+    }
+  
+    .section-title {
+      font-size: 1rem;
+    }
+    
+    .section-title::after {
+      width: 200px;
+    }
+  
+    .skills-grid {
+      grid-template-columns: repeat(1, 1fr);
+      padding: 1rem;
+      gap: 1rem;
+    }
+  
+    .tools {
+      font-size: 1.5rem;
+      margin: 1rem 0;
+    }
+  
+    .skill-card {
+      padding: 1.25rem;
+      overflow: visible;
+    }
+  
+    .skill-description {
+      margin-right: 3rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .skills-section {
+      padding: 0.5rem;
+    }
+  
+    .section-title {
+      font-size: 1.7rem;
+    }
+    
+    .section-title::after {
+      width: 230px;
+    }
+  
+    .section-description {
+      font-size: 0.7rem;
+      margin: 20px auto 0;
+    }
+  
+    .skills-grid {
+      padding: 0.8rem;
+    }
+  
+    .tools {
+      font-size: 1.5rem;
+    }
+  
+    .skill-name {
+      font-size: 1.1rem;
+    }
+  
+    .skill-description {
+      font-size: 0.8rem;
+    }
+  }
