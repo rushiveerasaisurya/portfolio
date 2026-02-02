@@ -41,6 +41,18 @@ const mainSkills = [
     icon: <Blocks className="w-full h-full" />
   },
   {
+    name: 'Java',
+    proficiency: 65,
+    description: 'Solid foundation in Java programming with experience in object-oriented design and application development.',
+    icon: <Coffee className="w-full h-full" />
+  },
+  {
+    name: 'Spring Boot',
+    proficiency: 70,
+    description: 'Capable of building RESTful APIs, handling data persistence, and structuring backend services.',
+    icon: <Server className="w-full h-full" />
+  },
+  {
     name: 'Node.js',
     proficiency: 85,
     description: 'Proficient in server-side JavaScript development using Node.js, including API development and server management.',
@@ -53,40 +65,49 @@ const mainSkills = [
     icon: <Server className="w-full h-full" />
   },
   {
+    name: 'Python',
+    proficiency: 75,
+    description: 'Proficient in Python programming for backend development, data processing, and automation tasks.',
+    icon: <Cpu className="w-full h-full" />
+  }
+];
+
+const extraSkills = [
+  {
+    name: 'Git & GitHub',
+    proficiency: 75,
+    description: 'Comfortable with version control, branching, pull requests, and collaborating on projects using GitHub.',
+    icon: <GitBranch className="w-full h-full" />
+  },
+  {
+    name: 'VS Code',
+    proficiency: 80,
+    description: 'Proficient in using Visual Studio Code for efficient coding, debugging, and extensions customization.',
+    icon: <FileCode className="w-full h-full" />
+  },
+  {
+    name: 'Docker',
+    proficiency: 60,
+    description: 'Experience with containerization and managing application environments and deployments using Docker.',
+    icon: <Container className="w-full h-full" />
+  },
+  {
+    name: 'MySQL',
+    proficiency: 80,
+    description: 'Experienced in designing relational schemas, writing SQL queries, and integrating MySQL into full-stack applications.',
+    icon: <Database className="w-full h-full" />
+  },
+   {
     name: 'MongoDB',
     proficiency: 70,
     description: 'Experience in NoSQL database design, CRUD operations, and integration with Node.js applications.',
     icon: <Database className="w-full h-full" />
   },
   {
-    name: 'Python',
-    proficiency: 75,
-    description: 'Proficient in Python programming for backend development, data processing, and automation tasks.',
+    name: 'Postman',
+    proficiency: 70,
+    description: 'Able to design, test, and debug REST APIs and workflows during backend development.',
     icon: <Cpu className="w-full h-full" />
-  },
-  {
-    name: 'Java',
-    proficiency: 65,
-    description: 'Solid foundation in Java programming with experience in object-oriented design and application development.',
-    icon: <Coffee className="w-full h-full" />
-  }
-];
-
-const extraSkills = [
-  {
-    name: 'Git',
-    description: 'Proficient in version control, branching strategies, and collaborative development workflows.',
-    icon: <GitBranch className="w-full h-full" />
-  },
-  {
-    name: 'VSCode',
-    description: 'Proficient in using Visual Studio Code for efficient coding, debugging, and extensions customization.',
-    icon: <FileCode className="w-full h-full" />
-  },
-  {
-    name: 'Docker',
-    description: 'Experience in containerization and managing application deployments using Docker.',
-    icon: <Container className="w-full h-full" />
   }
 ];
 
