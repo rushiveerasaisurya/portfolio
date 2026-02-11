@@ -17,10 +17,8 @@
     flex-direction: column; 
     justify-content: flex-start;
     padding-top: 20px;
-    
     background: rgba(0, 255, 255, 0);
     backdrop-filter: blur(10px) saturate(100%); 
-    
     overflow: hidden;
 
   }
@@ -89,6 +87,7 @@
     padding: 3px;
     display: flex;
     align-items: center;
+    cursor: none;    
   }
   .scrolled .link-names{
     opacity:0;

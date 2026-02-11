@@ -59,7 +59,7 @@ export default function Design() {
                 color: "#e0f2fe",
                 distance: 150,
                 enable: true,
-                opacity: 0.3,
+                opacity: 0.1,
                 width: 1,
               },
               move: {
@@ -80,7 +80,7 @@ export default function Design() {
                 value: 160,
               },
               opacity: {
-                value: 0.5,
+                value: 0.2,
               },
               shape: {
                 type: "circle",

@@ -95,25 +95,25 @@ function Contact() {
             variants={rightVariants}
           >
             <label htmlFor="name" className="label">Full name</label>
-            <input id="name" type="text" placeholder="" className="input" name="name" required />
+            <input id="name" type="text" placeholder="" className="input cursor-target" name="name" required />
           </motion.div>
           <motion.div
             className="form-group"
             variants={rightVariants}
           >
             <label htmlFor="email" className="label">Email</label>
-            <input id="email" type="email" placeholder="" className="input" name="email" required />
+            <input id="email" type="email" placeholder="" className="input cursor-target" name="email" required />
           </motion.div>
           <motion.div
             className="form-group"
             variants={rightVariants}
           >
             <label htmlFor="message" className="label">Message</label>
-            <textarea id="message" rows="3" className="textarea" name="message" required></textarea>
+            <textarea id="message" rows="3" className="textarea cursor-target" name="message" required></textarea>
           </motion.div>
           <motion.button
             type="submit"
-            className="button"
+            className="button cursor-target"
             variants={rightVariants}
           >
             Send Message

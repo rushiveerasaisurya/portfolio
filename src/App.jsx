@@ -6,22 +6,31 @@ import Design from "./bg-design/Design";
 import Skills from "./skills-page/skills"
 import Projects from "./project-page/projects";
 import Contact from "./contact-page/contact";
+import TargetCursor from "./components/TargetCursor";
 import "./index.css";
-function App() {
 
+function App() {
   return (
     <div className="app">
-      <Navbar/>
-      <Home/>
-      <Parallax type="about"/>
-      <About/>
-      <Skills/>
-      <Parallax type="projects"/>
-      <Projects/>
-      <Contact/>
-      <Design/>
+      <TargetCursor
+        spinDuration={5}
+        hideDefaultCursor
+        parallaxOn
+        hoverDuration={0.8}
+      />
+      <Design />
+      <div className="content-container">
+        <Navbar />
+        <Home />
+        <Parallax type="about" />
+        <About />
+        <Skills />
+        <Parallax type="projects" />
+        <Projects />
+        <Contact />
+      </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

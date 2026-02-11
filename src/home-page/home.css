@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 80%;
+    height: 100vh;
     overflow: hidden;
     z-index: 1;
     margin-top: -1px;
@@ -43,7 +43,7 @@
     overflow: hidden;
     font-size: 1rem;
     font-weight: 500;
-    cursor: pointer;
+    cursor: none;
     color: white;
     z-index: 1;
     margin-top:20px;
@@ -122,6 +122,7 @@
     transform: translate(-20px);
     position: relative;
     z-index: 10;
+    cursor: none;    
   }
   .btn:hover{
     background-color: rgb(130, 130, 130);
@@ -154,9 +155,10 @@
   
   .profile-photo{
     overflow: hidden;
-    margin-top: 70px;
-    height: 580px;
-    width: 580px;
+    margin-top: 100px;
+    height: auto;
+    width: 100%;
+    max-width: 650px;
     opacity: 0.9;
     filter:drop-shadow(0px 80px 100px #081725);
     transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
@@ -168,8 +170,9 @@
     }
 
     .profile-photo {
-        margin-top: 0px;
-        margin-bottom: 10px;  
+        margin-top: 50px;
+        margin-bottom: 10px;
+        max-width: 450px;
     }
 
     .details {
@@ -221,9 +224,7 @@
     }
 
     .profile-photo {
-        height: 350px;
-        width: 350px;
-        height: 50%;
+        max-width: 450px;
     }
 
     .name, .f-name {

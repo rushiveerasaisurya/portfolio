@@ -7,7 +7,7 @@ import githubLogo from "../assets/github.svg";
 import linkedinLogo from "../assets/linkedin.svg";
 import resume from "../assets/resume.pdf";
 import {motion} from "framer-motion";
-const roles = ["Web Developer", "Frontend Developer","Web Designer","Code Craftsman"];
+const roles = ["Web Developer", "Frontend Developer","Web Designer","MERN stack developer","Java Full Stack Developer"];
 
 function Home(){
     const [tooltip, setTooltip] = useState({ text: "", x: 0, y: 0, visible: false });
@@ -63,11 +63,11 @@ function Home(){
                     <p className="f-name">Rushi Veera Sai Surya</p>
                     <p className="role"><span ref={el}/></p>
                     <div className="buttons">
-                        <a href={`#contact-me`}><button  className="contact-button">Contact Me</button></a>
-                        <a href={resume} target="blank"><button  className="download-button">Download Resume</button></a>
+                        <a href={`#contact-me`}><button  className="contact-button cursor-target">Contact Me</button></a>
+                        <a href={resume} target="blank"><button  className="download-button cursor-target">Download Resume</button></a>
                     </div>
                 </div>
-            
+                
                 <div className="home-links">
                     <a href={`#contact-me`} className="btn" 
                         onMouseEnter={(e) => handleMouseEnter(e, "Email")}
